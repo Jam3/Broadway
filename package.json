@@ -18,7 +18,14 @@
     "player",
     "video"
   ],
-  "author": "Nick Poisson <nick@jam3.com>",
+  "author": "Michael Bebenita <mbebenita@gmail.com>",
+  "contributors": [
+    "Alon Zakai <alonzakai@gmail.com>",
+    "Andreas Gal <gal@mozilla.com>",
+    "Mathieu 'p01' Henri <mathieu@p01.org>",
+    "Matthias 'soliton4' Behrens <matthias.behrens@gmail.com>",
+    "Sam Leitch @oneam"
+  ],
   "license": "(BSD-3-Clause OR Apache 2.0)",
   "bugs": {
     "url": "https://github.com/Jam3/Broadway/issues"

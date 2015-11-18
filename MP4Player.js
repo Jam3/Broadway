@@ -121,7 +121,7 @@
       readAll: function(callback) {
         console.info("MP4Player::readAll()");
         this.stream.readAll(null, function (buffer) {
-          this.reader = new MP4Reader(new Bytestream(buffer));
+          this.reader = new MP4Reader(new ByteStream(buffer));
           this.reader.read();
           var video = this.reader.tracks[1];
           this.size = new Size(video.trak.tkhd.width, video.trak.tkhd.height);

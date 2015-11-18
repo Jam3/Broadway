@@ -539,7 +539,7 @@
         var end = offset + this.sampleToSize(sample, 1);
         var nalUnits = [];
         while(end - offset > 0) {
-          var length = (new Bytestream(bytes.buffer, offset)).readU32();
+          var length = (new ByteStream(bytes.buffer, offset)).readU32();
           nalUnits.push(bytes.subarray(offset + 4, offset + length + 4));
           offset = offset + length + 4;
         }

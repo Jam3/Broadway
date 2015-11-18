@@ -11,7 +11,7 @@
         module.exports = factory();
     } else {
         // Browser globals (root is window)
-        root.Bytestream = factory();
+        root.ByteStream = factory();
     }
 }(this, function () {
   function assert(condition, message) {
@@ -20,7 +20,7 @@
     }
   };
 
-  var Bytestream = (function BytestreamClosure() {
+  var ByteStream = (function ByteStreamClosure() {
     function constructor(arrayBuffer, start, length) {
       this.bytes = new Uint8Array(arrayBuffer);
       this.start = start || 0;
@@ -176,10 +176,10 @@
         this.pos = index;
       },
       subStream: function (start, length) {
-        return new Bytestream(this.bytes.buffer, start, length);
+        return new ByteStream(this.bytes.buffer, start, length);
       }
     };
     return constructor;
   })();
-  return Bytestream;
+  return ByteStream;
 }));

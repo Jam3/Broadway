@@ -16,7 +16,7 @@
 }(this, function () {
   function assert(condition, message) {
     if (!condition) {
-      error(message);
+      console.error(message);
     }
   };
 
@@ -171,7 +171,7 @@
       },
       seek: function (index) {
         if (index < 0 || index > this.end) {
-          error("Index out of bounds (bounds: [0, " + this.end + "], index: " + index + ").");
+          console.error("Index out of bounds (bounds: [0, " + this.end + "], index: " + index + ").");
         }
         this.pos = index;
       },
